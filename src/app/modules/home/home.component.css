@@ -1,0 +1,51 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: #f4f2f3;
+}
+.head{
+  width: 100%;
+}
+
+#logo{
+  width: 5%;
+}
+
+.body{
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fafafa;
+  border: solid;
+  border-width: 1px;
+  border-color: #d1cece;
+  margin-top: 6%;
+}
+
+section{
+  width: 95%;
+  margin-top: 3%;
+}
+
+#sectionInt{
+  margin-top: 13%;
+}
+
+#sectionGal{
+  width: 100%;
+    margin-top: 3%;
+    background: #d5d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-capa > img{
+  width: 83vw;
+  height: 64vh;
+}

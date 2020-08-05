@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { DragScrollComponent } from 'ngx-drag-scroll';
 
 @Component({
   selector: 'app-eventos',
@@ -7,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventosComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('nav', { read: DragScrollComponent }) ds: DragScrollComponent;
+  eventos$ : Observable<any>;
+
+  constructor(db: AngularFirestore) {
+    this.eventos$ = db.collection('eventos').valueChanges()
+
+  }
 
   ngOnInit(): void {
+  }
+
+  moveLeft() {
+    this.ds.moveLeft();
+  }
+
+  moveRight() {
+    this.ds.moveRight();
+  }
+
+  moveTo(index) {
+    this.ds.moveTo(index);
+  }
+
+  ngAfterViewInit() {
+    // Starting ngx-drag-scroll from specified index(3)
+    setTimeout(() => {
+      this.ds.moveTo(3);
+    }, 0);
   }
 
 }

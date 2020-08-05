@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="head">
+    <p>
+      <mat-toolbar color="primary">
+
+        <img id="logo" src="../../../assets/Grupo de máscara 7.png" alt="">
+
+        <button (click)="scroll(sectionInfo)"  mat-button aria-label="Example icon-button with share icon">Sobre nós</button>
+        <button (click)="scroll(sectionProj)"  mat-button aria-label="Example icon-button with share icon">Projetos</button>
+        <button (click)="scroll(sectionInt)"  mat-button aria-label="Example icon-button with share icon">integrantes</button>
+        <button (click)="scroll(sectionGal)"  mat-button aria-label="Example icon-button with share icon">Galeria</button>
+        <button (click)="scroll(sectionEven)"  mat-button aria-label="Example icon-button with share icon">Eventos</button>
+
+      </mat-toolbar>
+    </p>
+  </div>
+
+  <div class="body">
+
+    <div class="foto-capa">
+      <img src="../../../assets/Grupo 4.jpg" alt="">
+    </div>
+
+    <section id="sectionInfo" #sectionInfo> <app-informacoes></app-informacoes> </section>
+
+    <section id="sectionProj" #sectionProj> <app-projetos></app-projetos> </section>
+
+    <section id="sectionInt" #sectionInt> <app-integrantes></app-integrantes> </section>
+
+    <section id="sectionGal" #sectionGal> <app-galeria></app-galeria> </section>
+
+    <section id="sectionEven" #sectionEven> <app-eventos></app-eventos> </section>
+
+  </div>
+
+</div>

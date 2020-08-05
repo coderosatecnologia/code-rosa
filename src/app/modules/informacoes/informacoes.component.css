@@ -1,0 +1,50 @@
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    margin-top: 3%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  color: rgba(0,0,0,.87);
+  font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+  height: 38vh;
+  width: 16vw;
+  margin-right: 2%;
+  padding: 3%;
+}
+
+#info{
+  width: 61%;
+  text-align: center;
+}
+
+
+img{
+  width: 19%;
+  margin-bottom: 7%;
+}
+
+h2, h3, h4{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0c0633;
+  font-size: x-large;
+  margin-bottom: 23px;
+}

@@ -1,0 +1,68 @@
+
+.text{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.test{
+  width: 20vw;
+}
+
+.test2{
+  background: #6b1b79;
+    color: #fafafa;
+    width: 15vw;
+    margin-top: -1%;
+    height: 4vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 0.4%;
+    padding: 2px;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.button-container{
+  margin-right: 3%;
+}
+
+.button-container-right{
+  margin-left: 3%;
+}
+
+drag-scroll {
+  height:35vh;
+  width: 80vw;
+}
+
+
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
+  background: rgb(80 40 89 / 87%);
+}
+
+#img-drag{
+  width: 18vw;
+  height: 30vh;
+  margin-left: 2%;
+}
+
+h2, h3, h4{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0c0633;
+  font-size: x-large;
+  margin-bottom: 23px;
+}
+

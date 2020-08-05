@@ -1,1 +1,28 @@
-<p>integrantes works!</p>
+<div   class="text">
+  <h2>NOSSAS CODE ROSAS</h2>
+</div>
+
+
+  <div  class="slide">
+
+    <div class="button-container">
+      <button mat-fab color="accent" (click)="moveLeft()" aria-label="Example icon button with a bookmark icon">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+    </div>
+
+    <drag-scroll  #nav>
+      <div drag-scroll-item *ngFor="let item of integrantes$ | async" class="test">
+          <img id="img-drag"  src="{{item.foto}}" alt="">
+          <p class="test2">{{item.nome}}</p>
+      </div>
+    </drag-scroll>
+
+
+    <div class="button-container-right">
+      <button mat-fab color="accent" (click)="moveRight()" aria-label="Example icon button with a bookmark icon">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
+
+  </div>

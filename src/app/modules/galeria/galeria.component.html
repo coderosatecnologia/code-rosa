@@ -1,1 +1,9 @@
-<p>galeria works!</p>
+<h2>NOSSOS MOMENTOS</h2>
+
+<drag-scroll  #nav >
+  <div class="box">
+    <div *ngFor="let item of galerias$ | async" class="container">
+      <img class="flex" src="{{item.foto}}" alt="">
+    </div>
+  </div>
+</drag-scroll>

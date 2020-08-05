@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-galeria',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
-  constructor() { }
+  galerias$: Observable<any>;
+
+
+  constructor(db: AngularFirestore) {
+    this.galerias$ = db.collection('galeria').valueChanges()
+
+  }
 
   ngOnInit(): void {
-  }
+
+}
 
 }

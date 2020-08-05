@@ -1,0 +1,47 @@
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+h2, h3, h4{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0c0633;
+  font-size: x-large;
+  margin-bottom: 23px;
+}
+
+p{
+  width: 45%;
+    text-align: justify;
+    margin-left: 2%;
+}
+
+img{
+  width: 18%;
+}
+
+button{
+  border: solid;
+  border-width: 1px;
+  border-radius: 0px;
+  margin-top: -10%;
+  margin-left: 15%;
+}

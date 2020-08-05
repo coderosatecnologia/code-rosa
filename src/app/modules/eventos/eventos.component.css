@@ -1,0 +1,56 @@
+.eventos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+
+  width: 79vw;
+  margin-bottom: 7%;
+}
+
+.flex{
+  width: 100%;
+    height:100%;
+
+}
+
+.card{
+
+  width: 20vw;
+  height: 40vh;
+  border: solid;
+  border-color: black;
+}
+
+.info{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descr{
+  width: 50%;
+}
+
+
+
+
+.button-container{
+  margin-right: 3%;
+}
+
+.button-container-right{
+  margin-left: 3%;
+}
+
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
+  background: rgb(80 40 89 / 87%);
+}
+
+
+
